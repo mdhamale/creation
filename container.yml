@@ -1,11 +1,11 @@
 ---
 - hosts: local
   remote_user: support
-  become: yes
-  become_method: sudo
+#  become: yes
+#  become_method: sudo
   connection: ssh
   gather_facts: yes
   tasks:
   - name: create container
-    command: 'lxc launch images:centos/7 data1'
+    command: 'sudo lxc launch images:centos/7 data1'
 ## This is testing
