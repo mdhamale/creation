@@ -7,4 +7,8 @@
   gather_facts: yes
   tasks:
   - name: create container
-    command: 'lxc launch images:centos/7 data03'
+    command: 'lxc launch images:centos/7 data04'
+  - name: stop container
+    command: 'lxc stop data01'
+  - name: delete container
+    command: 'lxc delete data01'
