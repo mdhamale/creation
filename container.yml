@@ -10,9 +10,9 @@
 #    command: 'lxc launch images:centos/7 data04'
 #  - name: stop container
 #    command: 'lxc stop data01'
+#  - name: delete container
+#    command: 'lxc delete data02'
   - name: delete container
-    command: 'lxc delete data02'
+    command: 'lxc delete data03 --force'
   - name: delete container
-    command: 'lxc delete data03'
-  - name: delete container
-    command: 'lxc delete data04'
+    command: 'lxc delete data04 --force'
