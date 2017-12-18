@@ -6,13 +6,13 @@
   connection: ssh
   gather_facts: yes
   tasks:
-#  - name: create container
-#    command: 'lxc launch images:centos/7 data04'
+  - name: create container
+    command: 'lxc launch images:centos/7 data070'
 #  - name: stop container
 #    command: 'lxc stop data01'
 #  - name: delete container
 #    command: 'lxc delete data02'
-  - name: delete container
-    command: 'lxc delete data03 --force'
-  - name: delete container
-    command: 'lxc delete data04 --force'
+#  - name: delete container
+#    command: 'lxc delete data03 --force'
+#  - name: delete container
+#    command: 'lxc delete data04 --force'
